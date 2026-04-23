@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/fondo%20inicio.jpg?fileID=2800000&amp;guid=4e83f999e443b26469226f0ada7e9bc5&amp;type=3#fondo inicio&quot;);">
+        <ui:VisualElement style="width: 40%; height: 30%; align-self: center; background-image: url(&quot;project://database/Assets/Battle-Cats.png?fileID=2800000&amp;guid=aa5e2fa66b5ae514b8cdf2b7b424f752&amp;type=3#Battle-Cats&quot;); top: 15%; position: absolute;" />
+        <ui:Button text="PLAY" style="position: absolute; top: 65%; width: 40%; align-self: center; background-color: rgb(254, 194, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); font-size: 20px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>
