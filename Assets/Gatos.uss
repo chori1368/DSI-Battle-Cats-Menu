@@ -1,0 +1,59 @@
+.header {
+    height: 0;
+    background-color: rgb(168, 95, 51);
+    font-size: 20px;
+    justify-content: flex-start;
+}
+
+.Pbutton {
+    width: 33%;
+    height: 30%;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    background-color: rgb(250, 190, 1);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(254, 254, 254);
+    font-size: 300%;
+}
+
+.Ebutton {
+    height: 85%;
+    width: 7%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 0%;
+    margin-left: 3%;
+}
+
+.header2 {
+    height: 0;
+    margin-top: 10px;
+}
+
+.bottom {
+    background-color: rgb(143, 78, 44);
+}
+
+.Cbutton {
+    height: 100%;
+    width: 33%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-right: 4%;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}

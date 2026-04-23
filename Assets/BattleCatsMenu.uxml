@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Gatos.uss?fileID=7433441132597879392&amp;guid=3ea10500ff7b36549b9d4b3a726e7ace&amp;type=3#Gatos"/>
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/backgourd.png?fileID=2800000&amp;guid=49307d0eef97a0b43840325f90a3158f&amp;type=3#backgourd&quot;);">
+        <ui:VisualElement name="top-bar" style="height: 15%;">
+            <ui:VisualElement class="header" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: center; align-self: stretch;">
+                <ui:Label text="Cat Base" name="Cat-Base"/>
+                <ui:VisualElement style="width: 140px; height: 40px;">
+                    <ui:Label text="XP" name="XP-Container" style="color: rgb(4, 222, 246); -unity-font-style: bold; height: 33px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                        <ui:VisualElement style="background-color: rgb(225, 186, 119); height: 25px; width: 100px; align-self: flex-end;">
+                            <ui:Label text="60545&#10;" style="color: rgb(253, 235, 8); -unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: flex-end;"/>
+                        </ui:VisualElement>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="header2" style="flex-grow: 1; flex-direction: row; justify-content: space-between; margin-top: 5px;">
+                <ui:Button text="14952&#10;" name="Level" style="background-color: rgb(32, 32, 32); color: rgb(250, 190, 1);"/>
+                <ui:Slider label="dificultad" value="42" high-value="100" name="Dificultad" enabled="true" style="background-color: rgb(255, 255, 255); width: 40%;"/>
+                <ui:Button name="Sale1" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/oferta.PNG?fileID=2800000&amp;guid=a298aba781e578c44bc8faca15618bf4&amp;type=3#oferta&quot;); width: 20%;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="body" style="background-image: none; height: 70%;">
+            <ui:VisualElement name="Pbuttoms" style="height: 70%;">
+                <ui:Button text="Start!!" name="Start" class="Pbutton"/>
+                <ui:Button text="Upgrade" name="upgrade" class="Pbutton"/>
+                <ui:Button text="Equip" name="equip" class="Pbutton" style="border-left-color: rgb(1, 1, 1); border-right-color: rgb(1, 1, 1); border-top-color: rgb(1, 1, 1); border-bottom-color: rgb(1, 1, 1);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Mbuttoms" style="height: 15%; flex-direction: row; margin-left: 0%; padding-left: 0;">
+                <ui:Button name="menu" class="Ebutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/menu.png?fileID=2800000&amp;guid=2fdd1c7f375245749bb0b5b8bae80092&amp;type=3#menu&quot;);"/>
+                <ui:Button name="gamatoto" class="Ebutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/gamamoto.png?fileID=2800000&amp;guid=31bf78b9ec554db4bb4eda0003b1379f&amp;type=3#gamamoto&quot;);"/>
+                <ui:Button name="mission" class="Ebutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/missions.png?fileID=2800000&amp;guid=62cacf66b5e1e1a4c8c4866a52dbebfe&amp;type=3#missions&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Gbuttoms" style="flex-grow: 1; align-self: center; flex-direction: row; background-color: rgb(168, 95, 51); width: 25%; transform-origin: center; border-top-width: 0; padding-top: 0%; padding-right: 0%; padding-bottom: 0%; padding-left: 0%; margin-bottom: 1%; margin-top: -3%; margin-right: 2%; margin-left: 0%;">
+                <ui:Button name="storage" class="Cbutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/storage.PNG?fileID=2800000&amp;guid=b52f259508503de42b3368b3fcc3a829&amp;type=3#storage&quot;);"/>
+                <ui:Button name="normalcapsule" class="Cbutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/normalcapsules.PNG?fileID=2800000&amp;guid=36d050d1c191b5445bb9784d4c04cc7a&amp;type=3#normalcapsules&quot;);"/>
+                <ui:Button name="epiccapsule" class="Cbutton" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/rarecapsule.PNG?fileID=2800000&amp;guid=26c9b9dbc46c9994c9d6fe36d78cf9db&amp;type=3#rarecapsule&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement enabled="true" name="gato" style="position: absolute; top: 40%; left: 65%; right: auto; background-image: url(&quot;project://database/Assets/UI%20Toolkit/gato.png?fileID=2800000&amp;guid=45849668db0b7934fb52486fd985eab1&amp;type=3#gato&quot;); width: 35%; height: 70%;">
+                <ui:VisualElement name="hijo" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/gato.png?fileID=-5155329453913746789&amp;guid=45849668db0b7934fb52486fd985eab1&amp;type=3#gato_0&quot;); width: 50%; height: 50%; top: 30%;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="gacha-exit" class="header bottom" style="height: 15%;">
+            <ui:VisualElement class="header" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: center; align-self: stretch;">
+                <ui:Button name="arrow" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/atras.PNG?fileID=2800000&amp;guid=d1537131f5e4c1f4bbff414251a0ae32&amp;type=3#atras&quot;); width: 20%; height: 100%; margin-top: 0; margin-right: 0; margin-bottom: 8%; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"/>
+                <ui:VisualElement name="store" style="background-color: rgb(250, 190, 1); margin-left: 42%; flex-direction: row-reverse;">
+                    <ui:Label text="STORE" style="color: rgb(255, 255, 255); -unity-font-style: bold;"/>
+                    <ui:Button style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/carrito.PNG?fileID=2800000&amp;guid=d2f334865b1d34e4eb3f6cd4a80f4794&amp;type=3#carrito&quot;); margin-left: 0%; padding-left: 7%; padding-top: 0%; margin-top: 0%; margin-right: 3%; margin-bottom: 0%; padding-right: 0%; padding-bottom: 0%;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="catfood" style="width: 140px; height: 40px;">
+                    <ui:Label text="Cat Food" name="Friskas" style="color: rgb(255, 255, 255); -unity-font-style: bold; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-left: -42%; margin-top: 0%; margin-right: 0%; margin-bottom: 0%;">
+                        <ui:VisualElement style="background-color: rgb(225, 186, 119); align-self: flex-end; flex-direction: row-reverse; width: auto;">
+                            <ui:Label text="7106" style="color: rgb(253, 235, 8); -unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"/>
+                            <ui:Button style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/Captura.PNG?fileID=2800000&amp;guid=5d52dad5fc95da0408bb945c1e384bd1&amp;type=3#Captura&quot;); margin-left: 0; padding-left: 21%; margin-top: 0; margin-right: 5px; margin-bottom: 0; padding-top: 0%; padding-right: 0%; padding-bottom: 0%;"/>
+                        </ui:VisualElement>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
