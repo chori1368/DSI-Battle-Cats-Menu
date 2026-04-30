@@ -1,0 +1,11 @@
+.vida {
+    height: 40%;
+    top: 40%;
+    background-image: resource('corazon');
+}
+
+.dano {
+    height: 50%;
+    top: 20%;
+    background-image: resource('espada');
+}

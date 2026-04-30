@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(254, 254, 254);">
+        <ui:VisualElement name="imagen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato.png?fileID=2800000&amp;guid=424b79eee5d2d5f4daa6e1f405b5fede&amp;type=3#gato&quot;);" />
+        <lab4b imagen="corazon" name="vida" estado="1" style="flex-direction: row;" />
+        <lab4b imagen="espada" name="dano" estado="2" style="flex-direction: row;" />
+    </ui:VisualElement>
+</ui:UXML>

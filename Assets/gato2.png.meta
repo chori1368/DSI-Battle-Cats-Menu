@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 40920bf4cf2b0ac449f8f5c083942f22
+guid: d065a589affce90439b749eba13d881f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2778472778344366184
-    second: atras-removebg-preview_0
+      213: 9180173315645507809
+    second: gato2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atras-removebg-preview_0
+      name: gato2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 138
-        height: 138
+        x: 9
+        y: 84
+        width: 482
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89ff0b4aab1e079d0800000000000000
-      internalID: -2778472778344366184
+      spriteID: 1e8029fedf6866f70800000000000000
+      internalID: 9180173315645507809
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      atras-removebg-preview_0: -2778472778344366184
+      gato2_0: 9180173315645507809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
