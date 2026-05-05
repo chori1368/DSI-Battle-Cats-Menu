@@ -1,49 +1,44 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="tarjetaprefab" src="project://database/Assets/Resources/tarjetaprefab.uxml?fileID=9197481963319205126&amp;guid=ad17cb843ee79114998b5362a9b8e8e5&amp;type=3#tarjetaprefab" />
     <ui:VisualElement name="inicio" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/fondo%20inicio.jpg?fileID=2800000&amp;guid=4e83f999e443b26469226f0ada7e9bc5&amp;type=3#fondo inicio&quot;); display: flex;">
-        <ui:VisualElement style="width: 40%; height: 30%; align-self: center; background-image: url(&quot;project://database/Assets/Battle-Cats.png?fileID=2800000&amp;guid=aa5e2fa66b5ae514b8cdf2b7b424f752&amp;type=3#Battle-Cats&quot;); top: 15%; position: absolute;" />
-        <ui:Button text="PLAY" style="position: absolute; top: 65%; width: 40%; align-self: center; background-color: rgb(254, 194, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); font-size: 20px; -unity-font-style: bold;" />
+        <ui:VisualElement style="width: 40%; height: 30%; align-self: center; background-image: url(&quot;project://database/Assets/Battle-Cats.png?fileID=2800000&amp;guid=aa5e2fa66b5ae514b8cdf2b7b424f752&amp;type=3#Battle-Cats&quot;); top: 15%; position: absolute;"/>
+        <ui:Button text="Play" name="BtnPlay" style="position: absolute; top: 65%; width: 40%; align-self: center; background-color: rgb(254, 194, 0); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); font-size: 20px; -unity-font-style: bold;"/>
     </ui:VisualElement>
     <ui:VisualElement name="seleccion" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/backgourd.png?fileID=2800000&amp;guid=a7c4e01df96713f42a7619bd8fc8d192&amp;type=3#backgourd&quot;); display: none;">
-        <ui:VisualElement style="flex-grow: 1; background-color: rgb(124, 65, 42);" />
+        <ui:VisualElement style="flex-grow: 1; background-color: rgb(124, 65, 42);"/>
         <ui:VisualElement style="flex-grow: 1; width: auto; height: 70%; flex-direction: column;">
-            <ui:Button text="Gatos Prefabricados" style="width: 30%; top: 30%; background-color: rgb(255, 193, 0); font-size: 18px;" />
-            <ui:Button text="Crea Tus Gatos" style="width: 30%; top: 40%; background-color: rgb(255, 193, 0); font-size: 18px;" />
-            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato.png?fileID=2800000&amp;guid=424b79eee5d2d5f4daa6e1f405b5fede&amp;type=3#gato&quot;); width: 40%; height: 100%; top: 15%; left: 65%;" />
+            <ui:Button text="Formar Batalla" name="BtnPrefabs" style="width: 30%; top: 30%; background-color: rgb(255, 193, 0); font-size: 18px;"/>
+            <ui:Button text="Crea Tus Gatos" name="BtnCrear" style="width: 30%; top: 40%; background-color: rgb(255, 193, 0); font-size: 18px;"/>
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato.png?fileID=2800000&amp;guid=424b79eee5d2d5f4daa6e1f405b5fede&amp;type=3#gato&quot;); width: 40%; height: 100%; top: 15%; left: 65%;"/>
         </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 1; background-color: rgb(124, 65, 42);">
-            <ui:Button name="Button" style="background-image: url(&quot;project://database/Assets/atras.png?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); width: 15%; height: 150%; border-top-left-radius: 146px; border-top-right-radius: 146px; border-bottom-right-radius: 146px; border-bottom-left-radius: 146px; top: -50%;" />
+            <ui:Button name="BtnAtras" style="background-image: url(&quot;project://database/Assets/atras.PNG?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); width: 15%; height: 150%; border-top-left-radius: 146px; border-top-right-radius: 146px; border-bottom-right-radius: 146px; border-bottom-left-radius: 146px; top: -50%;"/>
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="menuprefabs" style="flex-grow: 1; background-color: rgb(212, 177, 96); display: none;">
-        <ui:VisualElement name="formacion" style="background-color: rgb(145, 118, 58); width: 80%; height: 40%; top: 10%; align-self: center;" />
-        <ui:VisualElement name="cartas" style="background-color: rgb(101, 80, 33); width: 80%; height: 40%; top: 10%; align-self: center; flex-direction: row;">
-            <ui:Instance template="tarjetaprefab" />
-            <ui:Instance template="tarjetaprefab" />
-            <ui:Instance template="tarjetaprefab" />
-            <ui:Instance template="tarjetaprefab" />
-            <ui:Instance template="tarjetaprefab" />
-        </ui:VisualElement>
-        <ui:Button style="align-self: flex-start; background-image: url(&quot;project://database/Assets/atras.png?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); border-top-left-radius: 123px; border-top-right-radius: 123px; border-bottom-right-radius: 123px; border-bottom-left-radius: 123px; width: 15%; height: 20%;" />
+        <ui:VisualElement name="Formacion" style="background-color: rgb(145, 118, 58); width: 80%; height: 40%; top: 10%; align-self: center; display: flex; flex-direction: row;"/>
+        <ui:VisualElement name="Cartas" style="background-color: rgb(101, 80, 33); width: 80%; height: 40%; top: 10%; align-self: center; flex-direction: row;"/>
+        <ui:Button text="Borrar&#10;" name="BtnBorrar" style="align-self: flex-end; top: 10%; width: 19%;"/>
+        <ui:Button name="BtnAtras" style="align-self: flex-start; background-image: url(&quot;project://database/Assets/atras.PNG?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); border-top-left-radius: 123px; border-top-right-radius: 123px; border-bottom-right-radius: 123px; border-bottom-left-radius: 123px; width: 15%; height: 20%;"/>
     </ui:VisualElement>
-    <ui:VisualElement name="menucrear" style="flex-grow: 1; background-color: rgb(212, 177, 96); display: none;">
-        <ui:VisualElement name="formacion" style="background-color: rgb(145, 118, 58); width: 80%; height: 100%; top: 10%; align-self: center;" />
-        <ui:VisualElement name="cartas" style="background-color: rgb(101, 80, 33); width: 70%; height: 142%; top: 10%; align-self: center; left: -5%;">
-            <ui:VisualElement name="crear" style="width: 29%; align-self: flex-end; flex-grow: 1; left: 29%;">
-                <ui:VisualElement style="height: 105%; flex-direction: row;">
-                    <ui:VisualElement name="gato1" style="background-image: url(&quot;project://database/Assets/gato6.png?fileID=2800000&amp;guid=58017171ea2f96c4cbd38b45781fa8a6&amp;type=3#gato6&quot;); flex-grow: 1;" />
-                    <ui:VisualElement name="gato2" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato7.png?fileID=2800000&amp;guid=985231a09d68f534498b782eccb2d2eb&amp;type=3#gato7&quot;);" />
-                    <ui:VisualElement name="gato3" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato3.png?fileID=2800000&amp;guid=144ead1217f00d644a345885249545d0&amp;type=3#gato3&quot;);" />
-                    <ui:VisualElement name="gato4" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato5.png?fileID=2800000&amp;guid=d5c212a3068bfde46942c90a21d4b69b&amp;type=3#gato5&quot;);" />
-                    <ui:VisualElement name="gato5" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/gato2.png?fileID=2800000&amp;guid=d065a589affce90439b749eba13d881f&amp;type=3#gato2&quot;);" />
-                </ui:VisualElement>
-                <lab4b imagen="corazon" estado="1" style="flex-direction: row; height: 100%;" />
-                <ui:Slider value="0" high-value="5" low-value="1" />
-                <lab4b imagen="espada" estado="1" style="height: 100%; flex-direction: row;" />
-                <ui:Slider value="0" high-value="5" low-value="1" />
-                <ui:Button text="Crear" />
+    <ui:VisualElement name="menucrear" style="background-color: rgb(212, 177, 96); display: none; flex-grow: 1;">
+        <ui:VisualElement name="Preview" style="background-color: rgb(145, 118, 58); flex-direction: row; align-self: center; overflow: hidden; flex-grow: 1; width: 20%; height: 233%;"/>
+        <ui:VisualElement name="crear" style="width: 40%; align-self: center; height: 300%; top: 1%; overflow: hidden;">
+            <ui:VisualElement style="flex-direction: row; height: 31%;">
+                <ui:VisualElement name="gato1" style="background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato4.png?fileID=2800000&amp;guid=58017171ea2f96c4cbd38b45781fa8a6&amp;type=3#gato4&quot;); flex-grow: 1;"/>
+                <ui:VisualElement name="gato2" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato5.png?fileID=2800000&amp;guid=985231a09d68f534498b782eccb2d2eb&amp;type=3#gato5&quot;);"/>
+                <ui:VisualElement name="gato3" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato2.png?fileID=2800000&amp;guid=144ead1217f00d644a345885249545d0&amp;type=3#gato2&quot;);"/>
+                <ui:VisualElement name="gato4" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato3.png?fileID=2800000&amp;guid=d5c212a3068bfde46942c90a21d4b69b&amp;type=3#gato3&quot;);"/>
+                <ui:VisualElement name="gato5" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Resources/imagenes_gatos/gato1.png?fileID=2800000&amp;guid=d065a589affce90439b749eba13d881f&amp;type=3#gato1&quot;);"/>
             </ui:VisualElement>
+            <CustomControl imagen="corazon" estado="1" style="flex-direction: row; top: 4%;"/>
+            <ui:Slider value="0" high-value="5" low-value="1" name="SliderVida" style="top: 7%;"/>
+            <CustomControl imagen="espada" estado="1" style="flex-direction: row; top: 12%;"/>
+            <ui:Slider value="0" high-value="5" low-value="1" name="SliderDanio" style="top: 16%;"/>
         </ui:VisualElement>
-        <ui:Button style="align-self: flex-start; background-image: url(&quot;project://database/Assets/atras.png?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); border-top-left-radius: 170px; border-top-right-radius: 170px; border-bottom-right-radius: 170px; border-bottom-left-radius: 170px; width: 15%; height: 20%;" />
+        <ui:VisualElement style="flex-grow: 1; top: 0%; flex-direction: row; justify-content: space-between; height: 60%;">
+            <ui:Button name="BtnAtras" style="background-image: url(&quot;project://database/Assets/atras.PNG?fileID=2800000&amp;guid=40920bf4cf2b0ac449f8f5c083942f22&amp;type=3#atras&quot;); border-top-left-radius: 200px; border-top-right-radius: 200px; border-bottom-right-radius: 200px; border-bottom-left-radius: 200px; height: 150%; width: 15%; top: -58%;"/>
+            <ui:Button text="Guardar" name="BtnGuardar" style="width: 20%;"/>
+            <ui:Button text="Crear" name="BtnCrearCarta" style="width: 18%;"/>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

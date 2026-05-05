@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class lab4b : VisualElement
+public class CustomControl : VisualElement
 {
     VisualElement mana1 = new VisualElement();
     VisualElement mana2 = new VisualElement();
@@ -58,7 +58,7 @@ public class lab4b : VisualElement
         mana4.style.backgroundImage = mana;
         mana5.style.backgroundImage = mana;
     }
-    public new class UxmlFactory : UxmlFactory<lab4b, UxmlTraits> { };
+    public new class UxmlFactory : UxmlFactory<CustomControl, UxmlTraits> { };
 
     public new class UxmlTraits : VisualElement.UxmlTraits
     {
@@ -68,29 +68,29 @@ public class lab4b : VisualElement
         public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
         {
             base.Init(ve, bag, cc);
-            var manabar = ve as lab4b;
+            var manabar = ve as CustomControl;
             manabar.Estado = myEstado.GetValueFromBag(bag, cc);
             manabar.Imagen = myImage.GetValueFromBag(bag, cc);
         }
 
     }
-    public lab4b()
+    public CustomControl()
     {
 
-        mana1.style.width = 50;
-        mana1.style.height = 30;
+        mana1.style.width = 100;
+        mana1.style.height = 50;
 
-        mana2.style.width = 50;
-        mana2.style.height = 30;
+        mana2.style.width = 100;
+        mana2.style.height = 50;
 
-        mana3.style.width = 50;
-        mana3.style.height = 30;
+        mana3.style.width = 100;
+        mana3.style.height = 50;
 
-        mana4.style.width = 50;
-        mana4.style.height = 30;
+        mana4.style.width = 100;
+        mana4.style.height = 50;
 
-        mana5.style.width = 50;
-        mana5.style.height = 30;
+        mana5.style.width = 100;
+        mana5.style.height = 50;
 
         hierarchy.Add(mana1);
         hierarchy.Add(mana2);

@@ -1,0 +1,15 @@
+.text {
+    align-self: center;
+    top: 30%;
+    -unity-font-style: bold-and-italic;
+    font-size: 16px;
+}
+
+.pestanya:hover {
+    scale: 1.1 1.1;
+    rotate: 3deg;
+}
+
+.pestanya {
+    flex-grow: 1;
+}

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/lab6.uss?fileID=7433441132597879392&amp;guid=2f1152137d8438c41b512ca43e458134&amp;type=3#lab6"/>
+    <ui:VisualElement name="contenedor" style="flex-grow: 1; background-color: rgb(30, 29, 67); flex-shrink: 1; flex-direction: row;">
+        <ui:VisualElement name="izda" style="background-color: rgb(13, 130, 61); width: 50%;">
+            <ui:VisualElement name="header" style="height: 25%; flex-direction: row;">
+                <ui:VisualElement name="Img1" class="cabeza" style="flex-grow: 1; background-image: resource(&quot;Fotos/Captura de pantalla 2026-03-12 151312&quot;);"/>
+                <ui:VisualElement name="Img2" class="cabeza" style="flex-grow: 1; background-image: resource(&quot;Fotos/Captura de pantalla 2026-03-12 151322&quot;);"/>
+                <ui:VisualElement name="Img3" class="cabeza" style="flex-grow: 1; background-image: resource(&quot;Fotos/Captura de pantalla 2026-03-12 151257&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="mid-nombre" class="mitf">
+                <ui:TextField label="Nombre" name="InputNombre"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="mid-apellido" class="mitf">
+                <ui:TextField label="Apellido" name="InputApellido" enabled="true"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="bottom" style="flex-grow: 1;">
+                <ui:Toggle label="Modificar" name="ToggleModificar" style="-unity-font-style: bold;"/>
+                <ui:Button text="Crear" name="BotonCrear" style="align-self: flex-end; left: auto; top: 50%; position: relative;"/>
+                <ui:Button text="Guardar" name="BotonGuardar" style="width: 25%; height: 25%; top: 20%;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Dcha" style="flex-direction: row; flex-wrap: wrap; flex-shrink: 1; justify-content: center; width: 50%; height: auto;"/>
+    </ui:VisualElement>
+</ui:UXML>
